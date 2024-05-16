@@ -1,0 +1,331 @@
+/*------------------------------------------HOME-------------------------------------------*/
+
+.home{
+    background-image: url("imgBJ/home.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal
+}
+
+.containerHome{
+    background-color: rgba(0, 0, 0, 0.7);
+    align-items: center;
+    width: 500px;
+    height: 55%;
+    padding: 1%;
+    border-radius: 20px;
+}
+
+.buttonHome{
+    font-size: 25px;
+    color: white;
+    height: 50px;
+    width: 110px;
+    border-color: rgb(238, 52, 52);
+    background-color: rgb(238, 52, 52);
+    border-radius: 3%;
+    margin-top: 5%;
+    margin-bottom: 1%;
+}
+.buttonHome:hover{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(217, 37, 37);
+    cursor: pointer;
+}
+
+.inputHome{
+    appearance: none;
+    border: none;
+    outline: none;
+    border-bottom: .2em solid rgb(238, 52, 52);
+    background: rgba(238, 52, 52, .2);
+    border-radius: .2em .2em 0 0;
+    padding: .4em;
+    color: white;
+    height: 40px;
+    font-size: 30px;
+    text-align: center;
+}
+::placeholder {
+    color: rgb(238, 52, 52);
+    opacity: 70%;
+}
+
+.titolo{
+    font-size: 50px;
+    color: white;
+}
+
+.goodluck{
+    font-size: 30px;
+    color: rgb(238, 52, 52);
+}
+
+/*-----------------------------------------GAME--------------------------------------------*/
+
+.gameTable{
+    background-image: url(imgBJ/campo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal
+}
+
+.card{
+    width: 130px;
+    height: 190px;
+    border: 1px solid black;
+    margin-left: -70px;
+    margin-top: 1%;
+    border-radius: 5%;
+}
+
+.cardGirata{
+    width: 130px;
+    height: 190px;
+    border: 1px solid rgb(0, 0, 0);
+    margin-left: -70px;
+    margin-top: 1%;
+    border-radius: 5%;
+}
+
+.score{
+    background-color: rgb(238, 52, 52, 0.5);
+    padding: 5px;
+    font-size: 20px;
+    color: white;
+    margin-left: 2%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.buttonPlay{
+    font-size: 20px;
+    color: white;
+    height: 50px;
+    width: 100px;
+    border-color: rgb(238, 52, 52);
+    background-color: rgb(238, 52, 52);
+    border-radius: 3%;
+    margin: 1%;
+}
+.buttonPlay:hover{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(217, 37, 37);
+    cursor: pointer;
+}
+
+.flex{  
+    display: flex;
+}
+
+.notVisible{
+    display: none;
+}
+
+.visible{
+    display: block;
+}
+
+/*-------------------------------------FICHES/TURNI-–--------------------------------------*/
+
+.ulFiches{
+    text-align: left;
+    font-size: 25px;
+    list-style: circle;
+    color: rgb(238, 52, 52);
+}
+
+.buttonRicarica{
+    font-size: 20px;
+    color: white;
+    padding: 1%;
+    border-color: rgb(238, 52, 52);
+    background-color: rgb(238, 52, 52);
+    border-radius: 3%;
+    margin-left: 3%;
+}
+.buttonRicarica:hover{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(217, 37, 37);
+    cursor: pointer;
+}
+
+.red{
+    color: rgb(238, 52, 52);
+}
+
+.white{
+    color: white;
+}
+
+.titoloContainer{
+    font-size: 40px;
+    color: white; 
+}
+
+.containerGame{
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1%;
+    border-radius: 20px;
+    margin-top: 1%;
+    text-align: center;
+    width: 25%;
+}
+
+.turno{
+    font-size: 25px;
+    color: white;
+}
+
+/*---------------------------------------PLAYERS-------------------------------------------*/
+
+.players{
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.playerSpace{
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.giocatore{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+.spanCardPlayers{
+    margin-left: 70px;
+}
+
+.imgFiches{
+    width: 45px;
+    height: 30px;
+}
+
+.spanfiches{
+    color: white;
+    font-size: 40px;
+    margin: 1%;
+}
+
+.betInput{
+    appearance: none;
+    border: none;
+    outline: none;
+    border-bottom: .2em solid rgb(238, 52, 52);
+    background: rgba(238, 52, 52, .2);
+    border-radius: .2em .2em 0 0;
+    padding: .4em;
+    color: white;
+    text-align: center;
+    height: 60px;
+    width: 60px;
+    font-size: 20px;
+}
+
+.buttonBet{
+    font-size: 20px;
+    color: white;
+    height: 60px;
+    width: 60px;
+    border-color: rgb(238, 52, 52);
+    background-color: rgb(238, 52, 52);
+    border-radius: 3%;
+    margin: 1%;
+}
+.buttonBet:hover{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(217, 37, 37);
+    cursor: pointer;
+}
+
+/*----------------------------------------DEALER-------------------------------------------*/
+
+.dealer{
+    margin-top: 1%;
+    text-align: center;
+    width: 46%;
+}
+
+.spanCardPc{
+    margin-left: 70px;
+}
+
+/*-----------------------------------------POPUP-------------------------------------------*/
+
+.popUp{
+    background-image: url(imgBJ/popUp.jpg);
+    background-size: cover;
+    align-items: center;
+    width: 41%;
+    margin-left: 29%;
+    margin-right: 30%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 20px;
+    position: absolute;
+}
+
+.divPopUp{
+    background: radial-gradient(rgb(0, 45, 1), rgb(0, 0, 0));
+    border-radius: 20px;
+    opacity: 90%;
+    padding: 1%;
+
+}
+
+.textPopUp{
+    font-size: 35px;
+    color: white;
+    opacity: 110%;
+}
+
+.ulPopUp{
+    font-size: 25px;
+    list-style: none;
+    color: rgb(238, 52, 52);
+    opacity: 110%;
+}
+
+.imgFichesPopUp{
+    width: 25px;
+    height: 17px;
+}
+
+.buttonPopUp{
+    font-size: 20px;
+    color: white;
+    height: 50px;
+    width: 120px;
+    border-color: rgb(238, 52, 52);
+    background-color: rgb(238, 52, 52);
+    border-radius: 3%;
+    margin: 1%;
+    opacity: 110%;
+}
+.buttonPopUp:hover{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(217, 37, 37);
+    cursor: pointer;
+}

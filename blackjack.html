@@ -1,0 +1,77 @@
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>BlackJack</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    </head>
+       
+    <body id="gameSpace" class="home">
+        
+        <div class="visible">
+            <div id="home" class="containerHome">
+                <center>
+                    <h1 class="titolo">BlackJack</h1>
+                    <input id="nGiocatori" class="inputHome" type="text" placeholder="Quanti Giocatori? (Max 3)">
+                    <input id="nomeGiocatore" class="notVisible" type="text">
+                    <span id="luck" class="notVisible">Buona Fortuna!</span>
+                    <br>
+                    <button id="send" class="buttonHome" onclick="initAskPlayer()">Send</button>
+                    <button id="start" class="notVisible" onclick="initGame()">Start</button>
+                    <br>
+                    <img src="imgBJ/divieto.png" height="30%" width="60%" id="imgHome">
+                </center>
+            </div>   
+        </div>
+
+        <div id="game" class="notVisible">
+            
+            <div class="notVisible" id="divPopUp">
+                <div class="divPopUp">
+                    <center>
+                        <p id="endGameStatsPc"></p>
+
+                        <ul id="endGameStatsPlayers" class="ulPopUp"></ul>
+                    
+                        <p class="textPopUp">Bet Pay:</p>
+                        <ul id="endGameFichesBetPlayers" class="ulPopUp"></ul>
+                        <button class="buttonPopUp" onclick="continueGame()">Continue</button>
+                        <button class="buttonPopUp" onclick="javascript:location.href='blackjack.html'">NewGame</button>
+                    </center>
+                </div>
+            </div>
+
+            <div>
+                <div class="flex">
+                    <div class="containerGame">
+                        <p class="titoloContainer">Stats Players:</p>
+                        <ul id="listaPlayersFiches" class="ulFiches"></ul>
+                    </div>
+
+                    <div class="dealer">
+                        <p class="giocatore">Dealer<span class ="score" id="pcScore">?</span></p>
+                        <span class="spanCardPc" id="pcCard"></span>
+                    </div>
+
+                    <div id="playButton" class="notVisible">
+                        <p class="titoloContainer">Turno di <span id="turn" class="red"></span>:</p>
+                        <button id="addCard" class="notVisible" onclick="aggiungiCartaPlayer()">Hit</button>
+                        <button id="doubleBj" class="notVisible" onclick="double()">Double</button>
+                        <br>
+                        <button id="standBj" class="notVisible" onclick="changeTurn()">Stand</button>                        
+                    </div>
+                </div>
+
+                <div class="players" id="campoPlayers"></div>
+        
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+
+    </body>
+
+</html>
